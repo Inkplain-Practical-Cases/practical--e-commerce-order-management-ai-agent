@@ -1,0 +1,183 @@
+{
+  "version": "1.0",
+  "name": "Order STEP-1",
+  "source": {
+    "revision": "step-01"
+  },
+  "flows": [
+    {
+      "id": "orders",
+      "name": "Order request"
+    }
+  ],
+  "step": {
+    "no": 1,
+    "of": 6,
+    "title": "Receive validated order requests",
+    "branch": "step-01",
+    "previous": null,
+    "removed": []
+  },
+  "components": [
+    {
+      "id": "be.receive_order",
+      "name": "receive_order",
+      "kind": "function",
+      "side": "backend",
+      "layer": "door",
+      "description": "STEP-1 receive_order component",
+      "flows": [
+        "orders"
+      ],
+      "source": {
+        "file": "app/features/orders/router.py",
+        "symbol": "receive_order",
+        "revision": "step-01",
+        "lines": [
+          1,
+          45
+        ]
+      },
+      "owner": "orders",
+      "component_reason": "Typed independent boundary",
+      "status": "observed",
+      "inputs": [
+        {
+          "id": "input-0",
+          "name": "OrderRequest",
+          "description": "OrderRequest"
+        }
+      ],
+      "validations": [],
+      "operations": [
+        {
+          "id": "op-0",
+          "title": "handle_order",
+          "origin": "imported",
+          "description": "Call handle_order",
+          "show": true,
+          "calls": {
+            "component": "be.handle_order",
+            "type": "call",
+            "label": "handle_order",
+            "evidence": "app/features/orders/router.py"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "id": "output-0",
+          "name": "OrderResponse",
+          "description": "OrderResponse"
+        }
+      ],
+      "attributes": {
+        "endpoint": "POST /api/orders"
+      },
+      "step_change": "added"
+    },
+    {
+      "id": "be.handle_order",
+      "name": "handle_order",
+      "kind": "function",
+      "side": "backend",
+      "layer": "handler",
+      "description": "STEP-1 handle_order component",
+      "flows": [
+        "orders"
+      ],
+      "source": {
+        "file": "app/features/orders/handlers/handle_order.py",
+        "symbol": "handle_order",
+        "revision": "step-01",
+        "lines": [
+          1,
+          45
+        ]
+      },
+      "owner": "orders",
+      "component_reason": "Typed independent boundary",
+      "status": "observed",
+      "inputs": [
+        {
+          "id": "input-0",
+          "name": "product_sku",
+          "description": "product_sku"
+        }
+      ],
+      "validations": [],
+      "operations": [
+        {
+          "id": "op-0",
+          "title": "service_order",
+          "origin": "imported",
+          "description": "Call service_order",
+          "show": true,
+          "calls": {
+            "component": "be.service_order",
+            "type": "call",
+            "label": "service_order",
+            "evidence": "app/features/orders/handlers/handle_order.py"
+          }
+        }
+      ],
+      "outputs": [
+        {
+          "id": "output-0",
+          "name": "status",
+          "description": "status"
+        },
+        {
+          "id": "output-1",
+          "name": "detail",
+          "description": "detail"
+        }
+      ],
+      "attributes": {},
+      "step_change": "added"
+    },
+    {
+      "id": "be.service_order",
+      "name": "service_order",
+      "kind": "function",
+      "side": "backend",
+      "layer": "service",
+      "description": "STEP-1 service_order component",
+      "flows": [
+        "orders"
+      ],
+      "source": {
+        "file": "app/features/orders/services/service_order.py",
+        "symbol": "service_order",
+        "revision": "step-01",
+        "lines": [
+          1,
+          45
+        ]
+      },
+      "owner": "orders",
+      "component_reason": "Typed independent boundary",
+      "status": "observed",
+      "inputs": [
+        {
+          "id": "input-0",
+          "name": "product_sku",
+          "description": "product_sku"
+        }
+      ],
+      "validations": [],
+      "operations": [],
+      "outputs": [
+        {
+          "id": "output-0",
+          "name": "detail",
+          "description": "detail"
+        }
+      ],
+      "attributes": {},
+      "step_change": "added"
+    }
+  ],
+  "dependencies": [],
+  "unresolved": []
+}
