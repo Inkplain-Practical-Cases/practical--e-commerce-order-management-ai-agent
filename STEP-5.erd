@@ -1,0 +1,43 @@
+{
+  "erd_version": 1,
+  "name": "e-commerce-order-management-ai-agent",
+  "engine": "sqlite",
+  "generated_from": [
+    "app/features/orders/providers/order_repository.py"
+  ],
+  "entities": [
+    {
+      "name": "orders",
+      "kind": "table",
+      "source": "app/features/orders/providers/order_repository.py:init_database() CREATE TABLE",
+      "description": "Committed order rows with generated string ID, buyer, SKU and strictly positive quantity. Inventory catalog and idempotency information are handled separately and do not create tables in this code.",
+      "fields": [
+        {
+          "name": "id",
+          "type": "TEXT",
+          "key": "PK",
+          "description": "Unique UUID hex order identifier."
+        },
+        {
+          "name": "buyer",
+          "type": "TEXT",
+          "nullable": false
+        },
+        {
+          "name": "sku",
+          "type": "TEXT",
+          "nullable": false
+        },
+        {
+          "name": "quantity",
+          "type": "INTEGER",
+          "nullable": false,
+          "description": "CHECK(quantity > 0) enforced by SQLite."
+        }
+      ],
+      "step_change": "unchanged"
+    }
+  ],
+  "relations": [],
+  "step": 5
+}
