@@ -1,1 +1,4037 @@
-{"version":1,"exportedAt":"2026-10-10T07:39:00Z","projectId":"learning-e-commerce-order-management-ai-agent","projectName":"E-Commerce Order Management AI Agent","meta":null,"docs":[{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s1-be-receive-order","data":{"name":"receive_order","input":[{"id":"input-0","name":"OrderRequest","description":"OrderRequest","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"OrderResponse","description":"OrderResponse","order_no":1}],"attributes":[{"id":"attr-0","key":"endpoint","value":"POST /api/orders"},{"id":"attr-1","key":"source_file","value":"app/features/orders/router.py"},{"id":"attr-2","key":"qualified_symbol","value":"receive_order"},{"id":"attr-3","key":"step_change","value":"added"},{"id":"attr-4","key":"layer","value":"door"},{"id":"attr-5","key":"component_id","value":"be.receive_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s1-be-handle-order","data":{"name":"handle_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"status","description":"status","order_no":1},{"id":"output-1","name":"detail","description":"detail","order_no":2}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/handlers/handle_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"handle_order"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"handler"},{"id":"attr-4","key":"component_id","value":"be.handle_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s1-be-service-order","data":{"name":"service_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[],"output":[{"id":"output-0","name":"detail","description":"detail","order_no":1}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/service_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"service_order"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.service_order"}]}},{"path":"diagram_canvas/crd-e-commerce-order-management-ai-agent-step-1","data":{"name":"STEP-1","order":0,"nodes":[{"id":"layer-1-door","type":"diagramNode","position":{"x":36,"y":40},"width":405,"height":390,"data":{"label":"DOOR","shape":"container","color":"#f1f5f9"}},{"id":"node-s1-be-receive-order","type":"diagramNode","parentId":"layer-1-door","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"receive_order","shape":"module","icon":"process-executor","color":"#bfdbfe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s1-be-receive-order","linkedCanvasName":"receive_order","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/router.py"}],"operationSteps":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-1-handler","type":"diagramNode","position":{"x":491,"y":40},"width":405,"height":390,"data":{"label":"HANDLER","shape":"container","color":"#f1f5f9"}},{"id":"node-s1-be-handle-order","type":"diagramNode","parentId":"layer-1-handler","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"handle_order","shape":"module","icon":"process-executor","color":"#dbeafe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s1-be-handle-order","linkedCanvasName":"handle_order","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/handlers/handle_order.py"}],"operationSteps":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-1-service","type":"diagramNode","position":{"x":946,"y":40},"width":405,"height":390,"data":{"label":"SERVICE","shape":"container","color":"#f1f5f9"}},{"id":"node-s1-be-service-order","type":"diagramNode","parentId":"layer-1-service","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"service_order","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s1-be-service-order","linkedCanvasName":"service_order","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/services/service_order.py"}],"operationSteps":[]}}],"edges":[{"id":"edge-s1-be-receive-order-op-0-be-handle-order","source":"node-s1-be-receive-order","sourceHandle":"operation:op-0:right","target":"node-s1-be-handle-order","targetHandle":"l","type":"smoothstep","label":"handle_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s1-be-handle-order-op-0-be-service-order","source":"node-s1-be-handle-order","sourceHandle":"operation:op-0:right","target":"node-s1-be-service-order","targetHandle":"l","type":"smoothstep","label":"service_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-receive-order","data":{"name":"receive_order","input":[{"id":"input-0","name":"OrderRequest","description":"OrderRequest","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"OrderResponse","description":"OrderResponse","order_no":1}],"attributes":[{"id":"attr-0","key":"endpoint","value":"POST /api/orders"},{"id":"attr-1","key":"source_file","value":"app/features/orders/router.py"},{"id":"attr-2","key":"qualified_symbol","value":"receive_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"door"},{"id":"attr-5","key":"component_id","value":"be.receive_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-handle-order","data":{"name":"handle_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"status","description":"status","order_no":1},{"id":"output-1","name":"detail","description":"detail","order_no":2}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/handlers/handle_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"handle_order"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"handler"},{"id":"attr-4","key":"component_id","value":"be.handle_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-service-order","data":{"name":"service_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"detail","description":"detail","order_no":1}],"attributes":[{"id":"attr-0","key":"step_note","value":"Calls an injected or deterministic provider instead of acknowledging input."},{"id":"attr-1","key":"source_file","value":"app/features/orders/services/service_order.py"},{"id":"attr-2","key":"qualified_symbol","value":"service_order"},{"id":"attr-3","key":"step_change","value":"changed"},{"id":"attr-4","key":"layer","value":"service"},{"id":"attr-5","key":"component_id","value":"be.service_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-domain-provider","data":{"name":"domain_provider","input":[{"id":"input-1","name":"domain request","description":"validated input","order_no":1}],"validations":[],"operation":[],"output":[{"id":"output-1","name":"provider result","description":"domain result","order_no":1}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/catalog.py"},{"id":"attr-1","key":"qualified_symbol","value":"lookup_product"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.domain_provider"}]}},{"path":"diagram_canvas/crd-e-commerce-order-management-ai-agent-step-2","data":{"name":"STEP-2","order":1,"nodes":[{"id":"layer-2-door","type":"diagramNode","position":{"x":36,"y":40},"width":405,"height":390,"data":{"label":"DOOR","shape":"container","color":"#f1f5f9"}},{"id":"node-s2-be-receive-order","type":"diagramNode","parentId":"layer-2-door","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"receive_order","shape":"module","icon":"process-executor","color":"#bfdbfe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s2-be-receive-order","linkedCanvasName":"receive_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/router.py"}],"operationSteps":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-2-handler","type":"diagramNode","position":{"x":491,"y":40},"width":405,"height":390,"data":{"label":"HANDLER","shape":"container","color":"#f1f5f9"}},{"id":"node-s2-be-handle-order","type":"diagramNode","parentId":"layer-2-handler","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"handle_order","shape":"module","icon":"process-executor","color":"#dbeafe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s2-be-handle-order","linkedCanvasName":"handle_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/handlers/handle_order.py"}],"operationSteps":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-2-service","type":"diagramNode","position":{"x":946,"y":40},"width":405,"height":390,"data":{"label":"SERVICE","shape":"container","color":"#f1f5f9"}},{"id":"node-s2-be-service-order","type":"diagramNode","parentId":"layer-2-service","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"service_order","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s2-be-service-order","linkedCanvasName":"service_order","nodeAttributes":[{"key":"step_change","value":"changed"},{"key":"source_file","value":"app/features/orders/services/service_order.py"}],"operationSteps":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}]}},{"id":"layer-2-provider","type":"diagramNode","position":{"x":1401,"y":40},"width":405,"height":390,"data":{"label":"PROVIDER","shape":"container","color":"#f1f5f9"}},{"id":"node-s2-be-domain-provider","type":"diagramNode","parentId":"layer-2-provider","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"domain_provider","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s2-be-domain-provider","linkedCanvasName":"domain_provider","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/providers/catalog.py"}],"operationSteps":[]}}],"edges":[{"id":"edge-s2-be-receive-order-op-0-be-handle-order","source":"node-s2-be-receive-order","sourceHandle":"operation:op-0:right","target":"node-s2-be-handle-order","targetHandle":"l","type":"smoothstep","label":"handle_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s2-be-handle-order-op-0-be-service-order","source":"node-s2-be-handle-order","sourceHandle":"operation:op-0:right","target":"node-s2-be-service-order","targetHandle":"l","type":"smoothstep","label":"service_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s2-be-service-order-op-provider-be-domain-provider","source":"node-s2-be-service-order","sourceHandle":"operation:op-provider:right","target":"node-s2-be-domain-provider","targetHandle":"l","type":"smoothstep","label":"provider lookup","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-receive-order","data":{"name":"receive_order","input":[{"id":"input-0","name":"OrderRequest","description":"OrderRequest","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"OrderResponse","description":"OrderResponse","order_no":1}],"attributes":[{"id":"attr-0","key":"endpoint","value":"POST /api/orders"},{"id":"attr-1","key":"source_file","value":"app/features/orders/router.py"},{"id":"attr-2","key":"qualified_symbol","value":"receive_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"door"},{"id":"attr-5","key":"component_id","value":"be.receive_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-handle-order","data":{"name":"handle_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"status","description":"status","order_no":1},{"id":"output-1","name":"detail","description":"detail","order_no":2}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/handlers/handle_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"handle_order"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"handler"},{"id":"attr-4","key":"component_id","value":"be.handle_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-service-order","data":{"name":"service_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"detail","description":"detail","order_no":1}],"attributes":[{"id":"attr-0","key":"step_note","value":"Calls an injected or deterministic provider instead of acknowledging input."},{"id":"attr-1","key":"source_file","value":"app/features/orders/services/service_order.py"},{"id":"attr-2","key":"qualified_symbol","value":"service_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"service"},{"id":"attr-5","key":"component_id","value":"be.service_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-domain-provider","data":{"name":"domain_provider","input":[{"id":"input-1","name":"domain request","description":"validated input","order_no":1}],"validations":[],"operation":[],"output":[{"id":"output-1","name":"provider result","description":"domain result","order_no":1}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/catalog.py"},{"id":"attr-1","key":"qualified_symbol","value":"lookup_product"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.domain_provider"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-step3-domain","data":{"name":"step3_domain","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/order_repository.py"},{"id":"attr-1","key":"qualified_symbol","value":"domain operation"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.step3_domain"}]}},{"path":"diagram_canvas/crd-e-commerce-order-management-ai-agent-step-3","data":{"name":"STEP-3","order":2,"nodes":[{"id":"layer-3-door","type":"diagramNode","position":{"x":36,"y":40},"width":405,"height":390,"data":{"label":"DOOR","shape":"container","color":"#f1f5f9"}},{"id":"node-s3-be-receive-order","type":"diagramNode","parentId":"layer-3-door","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"receive_order","shape":"module","icon":"process-executor","color":"#bfdbfe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s3-be-receive-order","linkedCanvasName":"receive_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/router.py"}],"operationSteps":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-3-handler","type":"diagramNode","position":{"x":491,"y":40},"width":405,"height":390,"data":{"label":"HANDLER","shape":"container","color":"#f1f5f9"}},{"id":"node-s3-be-handle-order","type":"diagramNode","parentId":"layer-3-handler","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"handle_order","shape":"module","icon":"process-executor","color":"#dbeafe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s3-be-handle-order","linkedCanvasName":"handle_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/handlers/handle_order.py"}],"operationSteps":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-3-service","type":"diagramNode","position":{"x":946,"y":40},"width":405,"height":390,"data":{"label":"SERVICE","shape":"container","color":"#f1f5f9"}},{"id":"node-s3-be-service-order","type":"diagramNode","parentId":"layer-3-service","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"service_order","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s3-be-service-order","linkedCanvasName":"service_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/service_order.py"}],"operationSteps":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}]}},{"id":"layer-3-provider","type":"diagramNode","position":{"x":1401,"y":40},"width":405,"height":650,"data":{"label":"PROVIDER","shape":"container","color":"#f1f5f9"}},{"id":"node-s3-be-domain-provider","type":"diagramNode","parentId":"layer-3-provider","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"domain_provider","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s3-be-domain-provider","linkedCanvasName":"domain_provider","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/catalog.py"}],"operationSteps":[]}},{"id":"node-s3-be-step3-domain","type":"diagramNode","parentId":"layer-3-provider","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"step3_domain","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s3-be-step3-domain","linkedCanvasName":"step3_domain","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/providers/order_repository.py"}],"operationSteps":[]}}],"edges":[{"id":"edge-s3-be-receive-order-op-0-be-handle-order","source":"node-s3-be-receive-order","sourceHandle":"operation:op-0:right","target":"node-s3-be-handle-order","targetHandle":"l","type":"smoothstep","label":"handle_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s3-be-handle-order-op-0-be-service-order","source":"node-s3-be-handle-order","sourceHandle":"operation:op-0:right","target":"node-s3-be-service-order","targetHandle":"l","type":"smoothstep","label":"service_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s3-be-service-order-op-provider-be-domain-provider","source":"node-s3-be-service-order","sourceHandle":"operation:op-provider:right","target":"node-s3-be-domain-provider","targetHandle":"l","type":"smoothstep","label":"provider lookup","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-receive-order","data":{"name":"receive_order","input":[{"id":"input-0","name":"OrderRequest","description":"OrderRequest","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"OrderResponse","description":"OrderResponse","order_no":1}],"attributes":[{"id":"attr-0","key":"endpoint","value":"POST /api/orders"},{"id":"attr-1","key":"source_file","value":"app/features/orders/router.py"},{"id":"attr-2","key":"qualified_symbol","value":"receive_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"door"},{"id":"attr-5","key":"component_id","value":"be.receive_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-handle-order","data":{"name":"handle_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"status","description":"status","order_no":1},{"id":"output-1","name":"detail","description":"detail","order_no":2}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/handlers/handle_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"handle_order"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"handler"},{"id":"attr-4","key":"component_id","value":"be.handle_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-service-order","data":{"name":"service_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"detail","description":"detail","order_no":1}],"attributes":[{"id":"attr-0","key":"step_note","value":"Calls an injected or deterministic provider instead of acknowledging input."},{"id":"attr-1","key":"source_file","value":"app/features/orders/services/service_order.py"},{"id":"attr-2","key":"qualified_symbol","value":"service_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"service"},{"id":"attr-5","key":"component_id","value":"be.service_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-reserve-stock","data":{"name":"reserve_stock","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/inventory_reservation.py"},{"id":"attr-1","key":"qualified_symbol","value":"reserve_stock"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.reserve_stock"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-domain-provider","data":{"name":"domain_provider","input":[{"id":"input-1","name":"domain request","description":"validated input","order_no":1}],"validations":[],"operation":[],"output":[{"id":"output-1","name":"provider result","description":"domain result","order_no":1}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/catalog.py"},{"id":"attr-1","key":"qualified_symbol","value":"lookup_product"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.domain_provider"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-step3-domain","data":{"name":"step3_domain","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/order_repository.py"},{"id":"attr-1","key":"qualified_symbol","value":"domain operation"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.step3_domain"}]}},{"path":"diagram_canvas/crd-e-commerce-order-management-ai-agent-step-4","data":{"name":"STEP-4","order":3,"nodes":[{"id":"layer-4-door","type":"diagramNode","position":{"x":36,"y":40},"width":405,"height":390,"data":{"label":"DOOR","shape":"container","color":"#f1f5f9"}},{"id":"node-s4-be-receive-order","type":"diagramNode","parentId":"layer-4-door","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"receive_order","shape":"module","icon":"process-executor","color":"#bfdbfe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s4-be-receive-order","linkedCanvasName":"receive_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/router.py"}],"operationSteps":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-4-handler","type":"diagramNode","position":{"x":491,"y":40},"width":405,"height":390,"data":{"label":"HANDLER","shape":"container","color":"#f1f5f9"}},{"id":"node-s4-be-handle-order","type":"diagramNode","parentId":"layer-4-handler","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"handle_order","shape":"module","icon":"process-executor","color":"#dbeafe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s4-be-handle-order","linkedCanvasName":"handle_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/handlers/handle_order.py"}],"operationSteps":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-4-service","type":"diagramNode","position":{"x":946,"y":40},"width":405,"height":650,"data":{"label":"SERVICE","shape":"container","color":"#f1f5f9"}},{"id":"node-s4-be-service-order","type":"diagramNode","parentId":"layer-4-service","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"service_order","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s4-be-service-order","linkedCanvasName":"service_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/service_order.py"}],"operationSteps":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}]}},{"id":"node-s4-be-reserve-stock","type":"diagramNode","parentId":"layer-4-service","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"reserve_stock","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s4-be-reserve-stock","linkedCanvasName":"reserve_stock","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/services/inventory_reservation.py"}],"operationSteps":[]}},{"id":"layer-4-provider","type":"diagramNode","position":{"x":1401,"y":40},"width":405,"height":650,"data":{"label":"PROVIDER","shape":"container","color":"#f1f5f9"}},{"id":"node-s4-be-domain-provider","type":"diagramNode","parentId":"layer-4-provider","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"domain_provider","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s4-be-domain-provider","linkedCanvasName":"domain_provider","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/catalog.py"}],"operationSteps":[]}},{"id":"node-s4-be-step3-domain","type":"diagramNode","parentId":"layer-4-provider","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"step3_domain","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s4-be-step3-domain","linkedCanvasName":"step3_domain","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/order_repository.py"}],"operationSteps":[]}}],"edges":[{"id":"edge-s4-be-receive-order-op-0-be-handle-order","source":"node-s4-be-receive-order","sourceHandle":"operation:op-0:right","target":"node-s4-be-handle-order","targetHandle":"l","type":"smoothstep","label":"handle_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s4-be-handle-order-op-0-be-service-order","source":"node-s4-be-handle-order","sourceHandle":"operation:op-0:right","target":"node-s4-be-service-order","targetHandle":"l","type":"smoothstep","label":"service_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s4-be-service-order-op-provider-be-domain-provider","source":"node-s4-be-service-order","sourceHandle":"operation:op-provider:right","target":"node-s4-be-domain-provider","targetHandle":"l","type":"smoothstep","label":"provider lookup","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-receive-order","data":{"name":"receive_order","input":[{"id":"input-0","name":"OrderRequest","description":"OrderRequest","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"OrderResponse","description":"OrderResponse","order_no":1}],"attributes":[{"id":"attr-0","key":"endpoint","value":"POST /api/orders"},{"id":"attr-1","key":"source_file","value":"app/features/orders/router.py"},{"id":"attr-2","key":"qualified_symbol","value":"receive_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"door"},{"id":"attr-5","key":"component_id","value":"be.receive_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-handle-order","data":{"name":"handle_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"status","description":"status","order_no":1},{"id":"output-1","name":"detail","description":"detail","order_no":2}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/handlers/handle_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"handle_order"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"handler"},{"id":"attr-4","key":"component_id","value":"be.handle_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-service-order","data":{"name":"service_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"detail","description":"detail","order_no":1}],"attributes":[{"id":"attr-0","key":"step_note","value":"Calls an injected or deterministic provider instead of acknowledging input."},{"id":"attr-1","key":"source_file","value":"app/features/orders/services/service_order.py"},{"id":"attr-2","key":"qualified_symbol","value":"service_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"service"},{"id":"attr-5","key":"component_id","value":"be.service_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-reserve-stock","data":{"name":"reserve_stock","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/inventory_reservation.py"},{"id":"attr-1","key":"qualified_symbol","value":"reserve_stock"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.reserve_stock"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-step5-policy","data":{"name":"step5_policy","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/idempotency.py"},{"id":"attr-1","key":"qualified_symbol","value":"policy"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.step5_policy"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-domain-provider","data":{"name":"domain_provider","input":[{"id":"input-1","name":"domain request","description":"validated input","order_no":1}],"validations":[],"operation":[],"output":[{"id":"output-1","name":"provider result","description":"domain result","order_no":1}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/catalog.py"},{"id":"attr-1","key":"qualified_symbol","value":"lookup_product"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.domain_provider"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-step3-domain","data":{"name":"step3_domain","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/order_repository.py"},{"id":"attr-1","key":"qualified_symbol","value":"domain operation"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.step3_domain"}]}},{"path":"diagram_canvas/crd-e-commerce-order-management-ai-agent-step-5","data":{"name":"STEP-5","order":4,"nodes":[{"id":"layer-5-door","type":"diagramNode","position":{"x":36,"y":40},"width":405,"height":390,"data":{"label":"DOOR","shape":"container","color":"#f1f5f9"}},{"id":"node-s5-be-receive-order","type":"diagramNode","parentId":"layer-5-door","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"receive_order","shape":"module","icon":"process-executor","color":"#bfdbfe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-receive-order","linkedCanvasName":"receive_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/router.py"}],"operationSteps":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-5-handler","type":"diagramNode","position":{"x":491,"y":40},"width":405,"height":390,"data":{"label":"HANDLER","shape":"container","color":"#f1f5f9"}},{"id":"node-s5-be-handle-order","type":"diagramNode","parentId":"layer-5-handler","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"handle_order","shape":"module","icon":"process-executor","color":"#dbeafe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-handle-order","linkedCanvasName":"handle_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/handlers/handle_order.py"}],"operationSteps":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-5-service","type":"diagramNode","position":{"x":946,"y":40},"width":405,"height":910,"data":{"label":"SERVICE","shape":"container","color":"#f1f5f9"}},{"id":"node-s5-be-service-order","type":"diagramNode","parentId":"layer-5-service","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"service_order","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-service-order","linkedCanvasName":"service_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/service_order.py"}],"operationSteps":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}]}},{"id":"node-s5-be-reserve-stock","type":"diagramNode","parentId":"layer-5-service","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"reserve_stock","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-reserve-stock","linkedCanvasName":"reserve_stock","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/inventory_reservation.py"}],"operationSteps":[]}},{"id":"node-s5-be-step5-policy","type":"diagramNode","parentId":"layer-5-service","position":{"x":32,"y":582},"width":340,"height":190,"data":{"label":"step5_policy","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-step5-policy","linkedCanvasName":"step5_policy","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/services/idempotency.py"}],"operationSteps":[]}},{"id":"layer-5-provider","type":"diagramNode","position":{"x":1401,"y":40},"width":405,"height":650,"data":{"label":"PROVIDER","shape":"container","color":"#f1f5f9"}},{"id":"node-s5-be-domain-provider","type":"diagramNode","parentId":"layer-5-provider","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"domain_provider","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-domain-provider","linkedCanvasName":"domain_provider","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/catalog.py"}],"operationSteps":[]}},{"id":"node-s5-be-step3-domain","type":"diagramNode","parentId":"layer-5-provider","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"step3_domain","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s5-be-step3-domain","linkedCanvasName":"step3_domain","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/order_repository.py"}],"operationSteps":[]}}],"edges":[{"id":"edge-s5-be-receive-order-op-0-be-handle-order","source":"node-s5-be-receive-order","sourceHandle":"operation:op-0:right","target":"node-s5-be-handle-order","targetHandle":"l","type":"smoothstep","label":"handle_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s5-be-handle-order-op-0-be-service-order","source":"node-s5-be-handle-order","sourceHandle":"operation:op-0:right","target":"node-s5-be-service-order","targetHandle":"l","type":"smoothstep","label":"service_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s5-be-service-order-op-provider-be-domain-provider","source":"node-s5-be-service-order","sourceHandle":"operation:op-provider:right","target":"node-s5-be-domain-provider","targetHandle":"l","type":"smoothstep","label":"provider lookup","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-receive-order","data":{"name":"receive_order","input":[{"id":"input-0","name":"OrderRequest","description":"OrderRequest","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"OrderResponse","description":"OrderResponse","order_no":1}],"attributes":[{"id":"attr-0","key":"endpoint","value":"POST /api/orders"},{"id":"attr-1","key":"source_file","value":"app/features/orders/router.py"},{"id":"attr-2","key":"qualified_symbol","value":"receive_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"door"},{"id":"attr-5","key":"component_id","value":"be.receive_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-handle-order","data":{"name":"handle_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"status","description":"status","order_no":1},{"id":"output-1","name":"detail","description":"detail","order_no":2}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/handlers/handle_order.py"},{"id":"attr-1","key":"qualified_symbol","value":"handle_order"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"handler"},{"id":"attr-4","key":"component_id","value":"be.handle_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-service-order","data":{"name":"service_order","input":[{"id":"input-0","name":"product_sku","description":"product_sku","order_no":1}],"validations":[],"operation":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}],"output":[{"id":"output-0","name":"detail","description":"detail","order_no":1}],"attributes":[{"id":"attr-0","key":"step_note","value":"Calls an injected or deterministic provider instead of acknowledging input."},{"id":"attr-1","key":"source_file","value":"app/features/orders/services/service_order.py"},{"id":"attr-2","key":"qualified_symbol","value":"service_order"},{"id":"attr-3","key":"step_change","value":"unchanged"},{"id":"attr-4","key":"layer","value":"service"},{"id":"attr-5","key":"component_id","value":"be.service_order"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-reserve-stock","data":{"name":"reserve_stock","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/inventory_reservation.py"},{"id":"attr-1","key":"qualified_symbol","value":"reserve_stock"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.reserve_stock"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-step5-policy","data":{"name":"step5_policy","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/idempotency.py"},{"id":"attr-1","key":"qualified_symbol","value":"policy"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.step5_policy"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-end-to-end","data":{"name":"end_to_end","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/services/end_to_end.py"},{"id":"attr-1","key":"qualified_symbol","value":"domain flow"},{"id":"attr-2","key":"step_change","value":"added"},{"id":"attr-3","key":"layer","value":"service"},{"id":"attr-4","key":"component_id","value":"be.end_to_end"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-domain-provider","data":{"name":"domain_provider","input":[{"id":"input-1","name":"domain request","description":"validated input","order_no":1}],"validations":[],"operation":[],"output":[{"id":"output-1","name":"provider result","description":"domain result","order_no":1}],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/catalog.py"},{"id":"attr-1","key":"qualified_symbol","value":"lookup_product"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.domain_provider"}]}},{"path":"process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-step3-domain","data":{"name":"step3_domain","input":[],"validations":[],"operation":[],"output":[],"attributes":[{"id":"attr-0","key":"source_file","value":"app/features/orders/providers/order_repository.py"},{"id":"attr-1","key":"qualified_symbol","value":"domain operation"},{"id":"attr-2","key":"step_change","value":"unchanged"},{"id":"attr-3","key":"layer","value":"provider"},{"id":"attr-4","key":"component_id","value":"be.step3_domain"}]}},{"path":"diagram_canvas/crd-e-commerce-order-management-ai-agent-step-6","data":{"name":"STEP-6","order":5,"nodes":[{"id":"layer-6-door","type":"diagramNode","position":{"x":36,"y":40},"width":405,"height":390,"data":{"label":"DOOR","shape":"container","color":"#f1f5f9"}},{"id":"node-s6-be-receive-order","type":"diagramNode","parentId":"layer-6-door","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"receive_order","shape":"module","icon":"process-executor","color":"#bfdbfe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-receive-order","linkedCanvasName":"receive_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/router.py"}],"operationSteps":[{"id":"op-0","title":"handle_order","description":"Call handle_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-6-handler","type":"diagramNode","position":{"x":491,"y":40},"width":405,"height":390,"data":{"label":"HANDLER","shape":"container","color":"#f1f5f9"}},{"id":"node-s6-be-handle-order","type":"diagramNode","parentId":"layer-6-handler","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"handle_order","shape":"module","icon":"process-executor","color":"#dbeafe","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-handle-order","linkedCanvasName":"handle_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/handlers/handle_order.py"}],"operationSteps":[{"id":"op-0","title":"service_order","description":"Call service_order","showInDiagram":true,"order_no":1}]}},{"id":"layer-6-service","type":"diagramNode","position":{"x":946,"y":40},"width":405,"height":1170,"data":{"label":"SERVICE","shape":"container","color":"#f1f5f9"}},{"id":"node-s6-be-service-order","type":"diagramNode","parentId":"layer-6-service","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"service_order","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-service-order","linkedCanvasName":"service_order","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/service_order.py"}],"operationSteps":[{"id":"op-provider","title":"consult_provider","description":"Delegate domain work to provider function","showInDiagram":true,"order_no":1}]}},{"id":"node-s6-be-reserve-stock","type":"diagramNode","parentId":"layer-6-service","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"reserve_stock","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-reserve-stock","linkedCanvasName":"reserve_stock","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/inventory_reservation.py"}],"operationSteps":[]}},{"id":"node-s6-be-step5-policy","type":"diagramNode","parentId":"layer-6-service","position":{"x":32,"y":582},"width":340,"height":190,"data":{"label":"step5_policy","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-step5-policy","linkedCanvasName":"step5_policy","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/services/idempotency.py"}],"operationSteps":[]}},{"id":"node-s6-be-end-to-end","type":"diagramNode","parentId":"layer-6-service","position":{"x":32,"y":842},"width":340,"height":190,"data":{"label":"end_to_end","shape":"module","icon":"process-executor","color":"#dcfce7","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-end-to-end","linkedCanvasName":"end_to_end","nodeAttributes":[{"key":"step_change","value":"added"},{"key":"source_file","value":"app/features/orders/services/end_to_end.py"}],"operationSteps":[]}},{"id":"layer-6-provider","type":"diagramNode","position":{"x":1401,"y":40},"width":405,"height":650,"data":{"label":"PROVIDER","shape":"container","color":"#f1f5f9"}},{"id":"node-s6-be-domain-provider","type":"diagramNode","parentId":"layer-6-provider","position":{"x":32,"y":62},"width":340,"height":190,"data":{"label":"domain_provider","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-domain-provider","linkedCanvasName":"domain_provider","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/catalog.py"}],"operationSteps":[]}},{"id":"node-s6-be-step3-domain","type":"diagramNode","parentId":"layer-6-provider","position":{"x":32,"y":322},"width":340,"height":190,"data":{"label":"step3_domain","shape":"module","icon":"process-executor","color":"#ffedd5","linkedCanvasId":"crd-e-commerce-order-management-ai-agent-s6-be-step3-domain","linkedCanvasName":"step3_domain","nodeAttributes":[{"key":"step_change","value":"unchanged"},{"key":"source_file","value":"app/features/orders/providers/order_repository.py"}],"operationSteps":[]}}],"edges":[{"id":"edge-s6-be-receive-order-op-0-be-handle-order","source":"node-s6-be-receive-order","sourceHandle":"operation:op-0:right","target":"node-s6-be-handle-order","targetHandle":"l","type":"smoothstep","label":"handle_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s6-be-handle-order-op-0-be-service-order","source":"node-s6-be-handle-order","sourceHandle":"operation:op-0:right","target":"node-s6-be-service-order","targetHandle":"l","type":"smoothstep","label":"service_order","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}},{"id":"edge-s6-be-service-order-op-provider-be-domain-provider","source":"node-s6-be-service-order","sourceHandle":"operation:op-provider:right","target":"node-s6-be-domain-provider","targetHandle":"l","type":"smoothstep","label":"provider lookup","data":{"color":"#475569","lineStyle":"solid","markerStartShape":"none","markerEndShape":"arrowclosed","pathType":"orthogonal","strokeWidth":2}}]}}]}
+{
+  "version": 1,
+  "exportedAt": "2026-10-10T07:39:00Z",
+  "projectId": "learning-e-commerce-order-management-ai-agent",
+  "projectName": "E-Commerce Order Management AI Agent",
+  "meta": null,
+  "docs": [
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s1-be-receive-order",
+      "data": {
+        "name": "receive_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "OrderRequest",
+            "description": "OrderRequest",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "handle_order",
+            "description": "Call handle_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "OrderResponse",
+            "description": "OrderResponse",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "endpoint",
+            "value": "POST /api/orders"
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/router.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "receive_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "door"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.receive_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s1-be-handle-order",
+      "data": {
+        "name": "handle_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "service_order",
+            "description": "Call service_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "status",
+            "description": "status",
+            "order_no": 1
+          },
+          {
+            "id": "output-1",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 2
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/handlers/handle_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "handle_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "handler"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.handle_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s1-be-service-order",
+      "data": {
+        "name": "service_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/service_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "service_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.service_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/crd-e-commerce-order-management-ai-agent-step-1",
+      "data": {
+        "name": "STEP-1",
+        "order": 0,
+        "nodes": [
+          {
+            "id": "layer-1-door",
+            "type": "diagramNode",
+            "position": {
+              "x": 36,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "DOOR",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s1-be-receive-order",
+            "type": "diagramNode",
+            "parentId": "layer-1-door",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "receive_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#bfdbfe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s1-be-receive-order",
+              "linkedCanvasName": "receive_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/router.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "handle_order",
+                  "description": "Call handle_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-1-handler",
+            "type": "diagramNode",
+            "position": {
+              "x": 491,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "HANDLER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s1-be-handle-order",
+            "type": "diagramNode",
+            "parentId": "layer-1-handler",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "handle_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dbeafe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s1-be-handle-order",
+              "linkedCanvasName": "handle_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/handlers/handle_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "service_order",
+                  "description": "Call service_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-1-service",
+            "type": "diagramNode",
+            "position": {
+              "x": 946,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "SERVICE",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s1-be-service-order",
+            "type": "diagramNode",
+            "parentId": "layer-1-service",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "service_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s1-be-service-order",
+              "linkedCanvasName": "service_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/service_order.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-s1-be-receive-order-op-0-be-handle-order",
+            "source": "node-s1-be-receive-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s1-be-handle-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "handle_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s1-be-handle-order-op-0-be-service-order",
+            "source": "node-s1-be-handle-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s1-be-service-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "service_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-receive-order",
+      "data": {
+        "name": "receive_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "OrderRequest",
+            "description": "OrderRequest",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "handle_order",
+            "description": "Call handle_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "OrderResponse",
+            "description": "OrderResponse",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "endpoint",
+            "value": "POST /api/orders"
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/router.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "receive_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "door"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.receive_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-handle-order",
+      "data": {
+        "name": "handle_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "service_order",
+            "description": "Call service_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "status",
+            "description": "status",
+            "order_no": 1
+          },
+          {
+            "id": "output-1",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 2
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/handlers/handle_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "handle_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "handler"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.handle_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-service-order",
+      "data": {
+        "name": "service_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-provider",
+            "title": "consult_provider",
+            "description": "Delegate domain work to provider function",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "step_note",
+            "value": "Calls an injected or deterministic provider instead of acknowledging input."
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/services/service_order.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "service_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "changed"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.service_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s2-be-domain-provider",
+      "data": {
+        "name": "domain_provider",
+        "input": [
+          {
+            "id": "input-1",
+            "name": "domain request",
+            "description": "validated input",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [],
+        "output": [
+          {
+            "id": "output-1",
+            "name": "provider result",
+            "description": "domain result",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/catalog.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "lookup_product"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.domain_provider"
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/crd-e-commerce-order-management-ai-agent-step-2",
+      "data": {
+        "name": "STEP-2",
+        "order": 1,
+        "nodes": [
+          {
+            "id": "layer-2-door",
+            "type": "diagramNode",
+            "position": {
+              "x": 36,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "DOOR",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s2-be-receive-order",
+            "type": "diagramNode",
+            "parentId": "layer-2-door",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "receive_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#bfdbfe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s2-be-receive-order",
+              "linkedCanvasName": "receive_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/router.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "handle_order",
+                  "description": "Call handle_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-2-handler",
+            "type": "diagramNode",
+            "position": {
+              "x": 491,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "HANDLER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s2-be-handle-order",
+            "type": "diagramNode",
+            "parentId": "layer-2-handler",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "handle_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dbeafe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s2-be-handle-order",
+              "linkedCanvasName": "handle_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/handlers/handle_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "service_order",
+                  "description": "Call service_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-2-service",
+            "type": "diagramNode",
+            "position": {
+              "x": 946,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "SERVICE",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s2-be-service-order",
+            "type": "diagramNode",
+            "parentId": "layer-2-service",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "service_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s2-be-service-order",
+              "linkedCanvasName": "service_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "changed"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/service_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-provider",
+                  "title": "consult_provider",
+                  "description": "Delegate domain work to provider function",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-2-provider",
+            "type": "diagramNode",
+            "position": {
+              "x": 1401,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "PROVIDER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s2-be-domain-provider",
+            "type": "diagramNode",
+            "parentId": "layer-2-provider",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "domain_provider",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s2-be-domain-provider",
+              "linkedCanvasName": "domain_provider",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/catalog.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-s2-be-receive-order-op-0-be-handle-order",
+            "source": "node-s2-be-receive-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s2-be-handle-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "handle_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s2-be-handle-order-op-0-be-service-order",
+            "source": "node-s2-be-handle-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s2-be-service-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "service_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s2-be-service-order-op-provider-be-domain-provider",
+            "source": "node-s2-be-service-order",
+            "sourceHandle": "operation:op-provider:right",
+            "target": "node-s2-be-domain-provider",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "provider lookup",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-receive-order",
+      "data": {
+        "name": "receive_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "OrderRequest",
+            "description": "OrderRequest",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "handle_order",
+            "description": "Call handle_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "OrderResponse",
+            "description": "OrderResponse",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "endpoint",
+            "value": "POST /api/orders"
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/router.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "receive_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "door"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.receive_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-handle-order",
+      "data": {
+        "name": "handle_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "service_order",
+            "description": "Call service_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "status",
+            "description": "status",
+            "order_no": 1
+          },
+          {
+            "id": "output-1",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 2
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/handlers/handle_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "handle_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "handler"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.handle_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-service-order",
+      "data": {
+        "name": "service_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-provider",
+            "title": "consult_provider",
+            "description": "Delegate domain work to provider function",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "step_note",
+            "value": "Calls an injected or deterministic provider instead of acknowledging input."
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/services/service_order.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "service_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.service_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-domain-provider",
+      "data": {
+        "name": "domain_provider",
+        "input": [
+          {
+            "id": "input-1",
+            "name": "domain request",
+            "description": "validated input",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [],
+        "output": [
+          {
+            "id": "output-1",
+            "name": "provider result",
+            "description": "domain result",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/catalog.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "lookup_product"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.domain_provider"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s3-be-step3-domain",
+      "data": {
+        "name": "step3_domain",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/order_repository.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "domain operation"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.step3_domain"
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/crd-e-commerce-order-management-ai-agent-step-3",
+      "data": {
+        "name": "STEP-3",
+        "order": 2,
+        "nodes": [
+          {
+            "id": "layer-3-door",
+            "type": "diagramNode",
+            "position": {
+              "x": 36,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "DOOR",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s3-be-receive-order",
+            "type": "diagramNode",
+            "parentId": "layer-3-door",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "receive_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#bfdbfe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s3-be-receive-order",
+              "linkedCanvasName": "receive_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/router.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "handle_order",
+                  "description": "Call handle_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-3-handler",
+            "type": "diagramNode",
+            "position": {
+              "x": 491,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "HANDLER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s3-be-handle-order",
+            "type": "diagramNode",
+            "parentId": "layer-3-handler",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "handle_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dbeafe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s3-be-handle-order",
+              "linkedCanvasName": "handle_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/handlers/handle_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "service_order",
+                  "description": "Call service_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-3-service",
+            "type": "diagramNode",
+            "position": {
+              "x": 946,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "SERVICE",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s3-be-service-order",
+            "type": "diagramNode",
+            "parentId": "layer-3-service",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "service_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s3-be-service-order",
+              "linkedCanvasName": "service_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/service_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-provider",
+                  "title": "consult_provider",
+                  "description": "Delegate domain work to provider function",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-3-provider",
+            "type": "diagramNode",
+            "position": {
+              "x": 1401,
+              "y": 40
+            },
+            "width": 405,
+            "height": 650,
+            "data": {
+              "label": "PROVIDER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s3-be-domain-provider",
+            "type": "diagramNode",
+            "parentId": "layer-3-provider",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "domain_provider",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s3-be-domain-provider",
+              "linkedCanvasName": "domain_provider",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/catalog.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s3-be-step3-domain",
+            "type": "diagramNode",
+            "parentId": "layer-3-provider",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "step3_domain",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s3-be-step3-domain",
+              "linkedCanvasName": "step3_domain",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/order_repository.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-s3-be-receive-order-op-0-be-handle-order",
+            "source": "node-s3-be-receive-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s3-be-handle-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "handle_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s3-be-handle-order-op-0-be-service-order",
+            "source": "node-s3-be-handle-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s3-be-service-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "service_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s3-be-service-order-op-provider-be-domain-provider",
+            "source": "node-s3-be-service-order",
+            "sourceHandle": "operation:op-provider:right",
+            "target": "node-s3-be-domain-provider",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "provider lookup",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-receive-order",
+      "data": {
+        "name": "receive_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "OrderRequest",
+            "description": "OrderRequest",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "handle_order",
+            "description": "Call handle_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "OrderResponse",
+            "description": "OrderResponse",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "endpoint",
+            "value": "POST /api/orders"
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/router.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "receive_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "door"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.receive_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-handle-order",
+      "data": {
+        "name": "handle_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "service_order",
+            "description": "Call service_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "status",
+            "description": "status",
+            "order_no": 1
+          },
+          {
+            "id": "output-1",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 2
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/handlers/handle_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "handle_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "handler"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.handle_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-service-order",
+      "data": {
+        "name": "service_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-provider",
+            "title": "consult_provider",
+            "description": "Delegate domain work to provider function",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "step_note",
+            "value": "Calls an injected or deterministic provider instead of acknowledging input."
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/services/service_order.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "service_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.service_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-reserve-stock",
+      "data": {
+        "name": "reserve_stock",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/inventory_reservation.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "reserve_stock"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.reserve_stock"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-domain-provider",
+      "data": {
+        "name": "domain_provider",
+        "input": [
+          {
+            "id": "input-1",
+            "name": "domain request",
+            "description": "validated input",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [],
+        "output": [
+          {
+            "id": "output-1",
+            "name": "provider result",
+            "description": "domain result",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/catalog.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "lookup_product"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.domain_provider"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s4-be-step3-domain",
+      "data": {
+        "name": "step3_domain",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/order_repository.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "domain operation"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.step3_domain"
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/crd-e-commerce-order-management-ai-agent-step-4",
+      "data": {
+        "name": "STEP-4",
+        "order": 3,
+        "nodes": [
+          {
+            "id": "layer-4-door",
+            "type": "diagramNode",
+            "position": {
+              "x": 36,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "DOOR",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s4-be-receive-order",
+            "type": "diagramNode",
+            "parentId": "layer-4-door",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "receive_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#bfdbfe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s4-be-receive-order",
+              "linkedCanvasName": "receive_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/router.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "handle_order",
+                  "description": "Call handle_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-4-handler",
+            "type": "diagramNode",
+            "position": {
+              "x": 491,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "HANDLER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s4-be-handle-order",
+            "type": "diagramNode",
+            "parentId": "layer-4-handler",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "handle_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dbeafe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s4-be-handle-order",
+              "linkedCanvasName": "handle_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/handlers/handle_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "service_order",
+                  "description": "Call service_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-4-service",
+            "type": "diagramNode",
+            "position": {
+              "x": 946,
+              "y": 40
+            },
+            "width": 405,
+            "height": 650,
+            "data": {
+              "label": "SERVICE",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s4-be-service-order",
+            "type": "diagramNode",
+            "parentId": "layer-4-service",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "service_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s4-be-service-order",
+              "linkedCanvasName": "service_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/service_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-provider",
+                  "title": "consult_provider",
+                  "description": "Delegate domain work to provider function",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "node-s4-be-reserve-stock",
+            "type": "diagramNode",
+            "parentId": "layer-4-service",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "reserve_stock",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s4-be-reserve-stock",
+              "linkedCanvasName": "reserve_stock",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/inventory_reservation.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "layer-4-provider",
+            "type": "diagramNode",
+            "position": {
+              "x": 1401,
+              "y": 40
+            },
+            "width": 405,
+            "height": 650,
+            "data": {
+              "label": "PROVIDER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s4-be-domain-provider",
+            "type": "diagramNode",
+            "parentId": "layer-4-provider",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "domain_provider",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s4-be-domain-provider",
+              "linkedCanvasName": "domain_provider",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/catalog.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s4-be-step3-domain",
+            "type": "diagramNode",
+            "parentId": "layer-4-provider",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "step3_domain",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s4-be-step3-domain",
+              "linkedCanvasName": "step3_domain",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/order_repository.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-s4-be-receive-order-op-0-be-handle-order",
+            "source": "node-s4-be-receive-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s4-be-handle-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "handle_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s4-be-handle-order-op-0-be-service-order",
+            "source": "node-s4-be-handle-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s4-be-service-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "service_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s4-be-service-order-op-provider-be-domain-provider",
+            "source": "node-s4-be-service-order",
+            "sourceHandle": "operation:op-provider:right",
+            "target": "node-s4-be-domain-provider",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "provider lookup",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-receive-order",
+      "data": {
+        "name": "receive_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "OrderRequest",
+            "description": "OrderRequest",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "handle_order",
+            "description": "Call handle_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "OrderResponse",
+            "description": "OrderResponse",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "endpoint",
+            "value": "POST /api/orders"
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/router.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "receive_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "door"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.receive_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-handle-order",
+      "data": {
+        "name": "handle_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "service_order",
+            "description": "Call service_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "status",
+            "description": "status",
+            "order_no": 1
+          },
+          {
+            "id": "output-1",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 2
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/handlers/handle_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "handle_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "handler"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.handle_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-service-order",
+      "data": {
+        "name": "service_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-provider",
+            "title": "consult_provider",
+            "description": "Delegate domain work to provider function",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "step_note",
+            "value": "Calls an injected or deterministic provider instead of acknowledging input."
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/services/service_order.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "service_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.service_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-reserve-stock",
+      "data": {
+        "name": "reserve_stock",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/inventory_reservation.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "reserve_stock"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.reserve_stock"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-step5-policy",
+      "data": {
+        "name": "step5_policy",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/idempotency.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "policy"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.step5_policy"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-domain-provider",
+      "data": {
+        "name": "domain_provider",
+        "input": [
+          {
+            "id": "input-1",
+            "name": "domain request",
+            "description": "validated input",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [],
+        "output": [
+          {
+            "id": "output-1",
+            "name": "provider result",
+            "description": "domain result",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/catalog.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "lookup_product"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.domain_provider"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s5-be-step3-domain",
+      "data": {
+        "name": "step3_domain",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/order_repository.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "domain operation"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.step3_domain"
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/crd-e-commerce-order-management-ai-agent-step-5",
+      "data": {
+        "name": "STEP-5",
+        "order": 4,
+        "nodes": [
+          {
+            "id": "layer-5-door",
+            "type": "diagramNode",
+            "position": {
+              "x": 36,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "DOOR",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s5-be-receive-order",
+            "type": "diagramNode",
+            "parentId": "layer-5-door",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "receive_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#bfdbfe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-receive-order",
+              "linkedCanvasName": "receive_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/router.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "handle_order",
+                  "description": "Call handle_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-5-handler",
+            "type": "diagramNode",
+            "position": {
+              "x": 491,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "HANDLER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s5-be-handle-order",
+            "type": "diagramNode",
+            "parentId": "layer-5-handler",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "handle_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dbeafe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-handle-order",
+              "linkedCanvasName": "handle_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/handlers/handle_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "service_order",
+                  "description": "Call service_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-5-service",
+            "type": "diagramNode",
+            "position": {
+              "x": 946,
+              "y": 40
+            },
+            "width": 405,
+            "height": 910,
+            "data": {
+              "label": "SERVICE",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s5-be-service-order",
+            "type": "diagramNode",
+            "parentId": "layer-5-service",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "service_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-service-order",
+              "linkedCanvasName": "service_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/service_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-provider",
+                  "title": "consult_provider",
+                  "description": "Delegate domain work to provider function",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "node-s5-be-reserve-stock",
+            "type": "diagramNode",
+            "parentId": "layer-5-service",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "reserve_stock",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-reserve-stock",
+              "linkedCanvasName": "reserve_stock",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/inventory_reservation.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s5-be-step5-policy",
+            "type": "diagramNode",
+            "parentId": "layer-5-service",
+            "position": {
+              "x": 32,
+              "y": 582
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "step5_policy",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-step5-policy",
+              "linkedCanvasName": "step5_policy",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/idempotency.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "layer-5-provider",
+            "type": "diagramNode",
+            "position": {
+              "x": 1401,
+              "y": 40
+            },
+            "width": 405,
+            "height": 650,
+            "data": {
+              "label": "PROVIDER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s5-be-domain-provider",
+            "type": "diagramNode",
+            "parentId": "layer-5-provider",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "domain_provider",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-domain-provider",
+              "linkedCanvasName": "domain_provider",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/catalog.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s5-be-step3-domain",
+            "type": "diagramNode",
+            "parentId": "layer-5-provider",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "step3_domain",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s5-be-step3-domain",
+              "linkedCanvasName": "step3_domain",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/order_repository.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-s5-be-receive-order-op-0-be-handle-order",
+            "source": "node-s5-be-receive-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s5-be-handle-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "handle_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s5-be-handle-order-op-0-be-service-order",
+            "source": "node-s5-be-handle-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s5-be-service-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "service_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s5-be-service-order-op-provider-be-domain-provider",
+            "source": "node-s5-be-service-order",
+            "sourceHandle": "operation:op-provider:right",
+            "target": "node-s5-be-domain-provider",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "provider lookup",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-receive-order",
+      "data": {
+        "name": "receive_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "OrderRequest",
+            "description": "OrderRequest",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "handle_order",
+            "description": "Call handle_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "OrderResponse",
+            "description": "OrderResponse",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "endpoint",
+            "value": "POST /api/orders"
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/router.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "receive_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "door"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.receive_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-handle-order",
+      "data": {
+        "name": "handle_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-0",
+            "title": "service_order",
+            "description": "Call service_order",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "status",
+            "description": "status",
+            "order_no": 1
+          },
+          {
+            "id": "output-1",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 2
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/handlers/handle_order.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "handle_order"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "handler"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.handle_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-service-order",
+      "data": {
+        "name": "service_order",
+        "input": [
+          {
+            "id": "input-0",
+            "name": "product_sku",
+            "description": "product_sku",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [
+          {
+            "id": "op-provider",
+            "title": "consult_provider",
+            "description": "Delegate domain work to provider function",
+            "showInDiagram": true,
+            "order_no": 1
+          }
+        ],
+        "output": [
+          {
+            "id": "output-0",
+            "name": "detail",
+            "description": "detail",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "step_note",
+            "value": "Calls an injected or deterministic provider instead of acknowledging input."
+          },
+          {
+            "id": "attr-1",
+            "key": "source_file",
+            "value": "app/features/orders/services/service_order.py"
+          },
+          {
+            "id": "attr-2",
+            "key": "qualified_symbol",
+            "value": "service_order"
+          },
+          {
+            "id": "attr-3",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-4",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-5",
+            "key": "component_id",
+            "value": "be.service_order"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-reserve-stock",
+      "data": {
+        "name": "reserve_stock",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/inventory_reservation.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "reserve_stock"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.reserve_stock"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-step5-policy",
+      "data": {
+        "name": "step5_policy",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/idempotency.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "policy"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.step5_policy"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-end-to-end",
+      "data": {
+        "name": "end_to_end",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/services/end_to_end.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "domain flow"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "added"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "service"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.end_to_end"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-domain-provider",
+      "data": {
+        "name": "domain_provider",
+        "input": [
+          {
+            "id": "input-1",
+            "name": "domain request",
+            "description": "validated input",
+            "order_no": 1
+          }
+        ],
+        "validations": [],
+        "operation": [],
+        "output": [
+          {
+            "id": "output-1",
+            "name": "provider result",
+            "description": "domain result",
+            "order_no": 1
+          }
+        ],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/catalog.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "lookup_product"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.domain_provider"
+          }
+        ]
+      }
+    },
+    {
+      "path": "process_executor_canvas/crd-e-commerce-order-management-ai-agent-s6-be-step3-domain",
+      "data": {
+        "name": "step3_domain",
+        "input": [],
+        "validations": [],
+        "operation": [],
+        "output": [],
+        "attributes": [
+          {
+            "id": "attr-0",
+            "key": "source_file",
+            "value": "app/features/orders/providers/order_repository.py"
+          },
+          {
+            "id": "attr-1",
+            "key": "qualified_symbol",
+            "value": "domain operation"
+          },
+          {
+            "id": "attr-2",
+            "key": "step_change",
+            "value": "unchanged"
+          },
+          {
+            "id": "attr-3",
+            "key": "layer",
+            "value": "provider"
+          },
+          {
+            "id": "attr-4",
+            "key": "component_id",
+            "value": "be.step3_domain"
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/crd-e-commerce-order-management-ai-agent-step-6",
+      "data": {
+        "name": "STEP-6",
+        "order": 5,
+        "nodes": [
+          {
+            "id": "layer-6-door",
+            "type": "diagramNode",
+            "position": {
+              "x": 36,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "DOOR",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s6-be-receive-order",
+            "type": "diagramNode",
+            "parentId": "layer-6-door",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "receive_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#bfdbfe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-receive-order",
+              "linkedCanvasName": "receive_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/router.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "handle_order",
+                  "description": "Call handle_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-6-handler",
+            "type": "diagramNode",
+            "position": {
+              "x": 491,
+              "y": 40
+            },
+            "width": 405,
+            "height": 390,
+            "data": {
+              "label": "HANDLER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s6-be-handle-order",
+            "type": "diagramNode",
+            "parentId": "layer-6-handler",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "handle_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dbeafe",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-handle-order",
+              "linkedCanvasName": "handle_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/handlers/handle_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-0",
+                  "title": "service_order",
+                  "description": "Call service_order",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "layer-6-service",
+            "type": "diagramNode",
+            "position": {
+              "x": 946,
+              "y": 40
+            },
+            "width": 405,
+            "height": 1170,
+            "data": {
+              "label": "SERVICE",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s6-be-service-order",
+            "type": "diagramNode",
+            "parentId": "layer-6-service",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "service_order",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-service-order",
+              "linkedCanvasName": "service_order",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/service_order.py"
+                }
+              ],
+              "operationSteps": [
+                {
+                  "id": "op-provider",
+                  "title": "consult_provider",
+                  "description": "Delegate domain work to provider function",
+                  "showInDiagram": true,
+                  "order_no": 1
+                }
+              ]
+            }
+          },
+          {
+            "id": "node-s6-be-reserve-stock",
+            "type": "diagramNode",
+            "parentId": "layer-6-service",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "reserve_stock",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-reserve-stock",
+              "linkedCanvasName": "reserve_stock",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/inventory_reservation.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s6-be-step5-policy",
+            "type": "diagramNode",
+            "parentId": "layer-6-service",
+            "position": {
+              "x": 32,
+              "y": 582
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "step5_policy",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-step5-policy",
+              "linkedCanvasName": "step5_policy",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/idempotency.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s6-be-end-to-end",
+            "type": "diagramNode",
+            "parentId": "layer-6-service",
+            "position": {
+              "x": 32,
+              "y": 842
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "end_to_end",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#dcfce7",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-end-to-end",
+              "linkedCanvasName": "end_to_end",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/services/end_to_end.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "layer-6-provider",
+            "type": "diagramNode",
+            "position": {
+              "x": 1401,
+              "y": 40
+            },
+            "width": 405,
+            "height": 650,
+            "data": {
+              "label": "PROVIDER",
+              "shape": "container",
+              "color": "#f1f5f9"
+            }
+          },
+          {
+            "id": "node-s6-be-domain-provider",
+            "type": "diagramNode",
+            "parentId": "layer-6-provider",
+            "position": {
+              "x": 32,
+              "y": 62
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "domain_provider",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-domain-provider",
+              "linkedCanvasName": "domain_provider",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/catalog.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          },
+          {
+            "id": "node-s6-be-step3-domain",
+            "type": "diagramNode",
+            "parentId": "layer-6-provider",
+            "position": {
+              "x": 32,
+              "y": 322
+            },
+            "width": 340,
+            "height": 190,
+            "data": {
+              "label": "step3_domain",
+              "shape": "module",
+              "icon": "process-executor",
+              "color": "#ffedd5",
+              "linkedCanvasId": "crd-e-commerce-order-management-ai-agent-s6-be-step3-domain",
+              "linkedCanvasName": "step3_domain",
+              "nodeAttributes": [
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "source_file",
+                  "value": "app/features/orders/providers/order_repository.py"
+                }
+              ],
+              "operationSteps": []
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "edge-s6-be-receive-order-op-0-be-handle-order",
+            "source": "node-s6-be-receive-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s6-be-handle-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "handle_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s6-be-handle-order-op-0-be-service-order",
+            "source": "node-s6-be-handle-order",
+            "sourceHandle": "operation:op-0:right",
+            "target": "node-s6-be-service-order",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "service_order",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          },
+          {
+            "id": "edge-s6-be-service-order-op-provider-be-domain-provider",
+            "source": "node-s6-be-service-order",
+            "sourceHandle": "operation:op-provider:right",
+            "target": "node-s6-be-domain-provider",
+            "targetHandle": "l",
+            "type": "smoothstep",
+            "label": "provider lookup",
+            "data": {
+              "color": "#475569",
+              "lineStyle": "solid",
+              "markerStartShape": "none",
+              "markerEndShape": "arrowclosed",
+              "pathType": "orthogonal",
+              "strokeWidth": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "diagram_canvas/erd-e-commerce-order-management-ai-agent-step-3",
+      "data": {
+        "name": "STEP-3-ERD",
+        "nodes": [
+          {
+            "id": "ent-orders",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "width": 260,
+            "height": 150,
+            "data": {
+              "label": "orders",
+              "shape": "entity-table",
+              "color": "#52c41a",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "fields": [
+                {
+                  "id": "orders-id",
+                  "name": "id",
+                  "type": "TEXT",
+                  "key": "PK"
+                },
+                {
+                  "id": "orders-buyer",
+                  "name": "buyer",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-sku",
+                  "name": "sku",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-quantity",
+                  "name": "quantity",
+                  "type": "INTEGER",
+                  "key": ""
+                }
+              ],
+              "nodeAttributes": [
+                {
+                  "key": "kind",
+                  "value": "table"
+                },
+                {
+                  "key": "step_change",
+                  "value": "added"
+                },
+                {
+                  "key": "description",
+                  "value": "Committed order rows with generated string ID, buyer, SKU and strictly positive quantity. Inventory catalog and idempotency information are handled separately and do not create tables in this code."
+                },
+                {
+                  "key": "source",
+                  "value": "app/features/orders/providers/order_repository.py:init_database() CREATE TABLE"
+                },
+                {
+                  "key": "field:id",
+                  "value": "TEXT, PK, Unique UUID hex order identifier."
+                },
+                {
+                  "key": "field:buyer",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:sku",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:quantity",
+                  "value": "INTEGER, not null, CHECK(quantity > 0) enforced by SQLite."
+                }
+              ],
+              "config": {}
+            }
+          },
+          {
+            "id": "ent-legend",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 210
+            },
+            "width": 260,
+            "height": 120,
+            "data": {
+              "label": "This step's database:\ngreen = added\nPK = primary key · FK = foreign key",
+              "shape": "note",
+              "color": "#d4b106",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "config": {}
+            }
+          }
+        ],
+        "edges": [],
+        "order": 8
+      }
+    },
+    {
+      "path": "diagram_canvas/erd-e-commerce-order-management-ai-agent-step-4",
+      "data": {
+        "name": "STEP-4-ERD",
+        "nodes": [
+          {
+            "id": "ent-orders",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "width": 260,
+            "height": 150,
+            "data": {
+              "label": "orders",
+              "shape": "entity-table",
+              "color": "#8c8c8c",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "fields": [
+                {
+                  "id": "orders-id",
+                  "name": "id",
+                  "type": "TEXT",
+                  "key": "PK"
+                },
+                {
+                  "id": "orders-buyer",
+                  "name": "buyer",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-sku",
+                  "name": "sku",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-quantity",
+                  "name": "quantity",
+                  "type": "INTEGER",
+                  "key": ""
+                }
+              ],
+              "nodeAttributes": [
+                {
+                  "key": "kind",
+                  "value": "table"
+                },
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "description",
+                  "value": "Committed order rows with generated string ID, buyer, SKU and strictly positive quantity. Inventory catalog and idempotency information are handled separately and do not create tables in this code."
+                },
+                {
+                  "key": "source",
+                  "value": "app/features/orders/providers/order_repository.py:init_database() CREATE TABLE"
+                },
+                {
+                  "key": "field:id",
+                  "value": "TEXT, PK, Unique UUID hex order identifier."
+                },
+                {
+                  "key": "field:buyer",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:sku",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:quantity",
+                  "value": "INTEGER, not null, CHECK(quantity > 0) enforced by SQLite."
+                }
+              ],
+              "config": {}
+            }
+          },
+          {
+            "id": "ent-legend",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 210
+            },
+            "width": 260,
+            "height": 120,
+            "data": {
+              "label": "This step's database:\ngrey = unchanged\nPK = primary key · FK = foreign key",
+              "shape": "note",
+              "color": "#d4b106",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "config": {}
+            }
+          }
+        ],
+        "edges": [],
+        "order": 9
+      }
+    },
+    {
+      "path": "diagram_canvas/erd-e-commerce-order-management-ai-agent-step-5",
+      "data": {
+        "name": "STEP-5-ERD",
+        "nodes": [
+          {
+            "id": "ent-orders",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "width": 260,
+            "height": 150,
+            "data": {
+              "label": "orders",
+              "shape": "entity-table",
+              "color": "#8c8c8c",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "fields": [
+                {
+                  "id": "orders-id",
+                  "name": "id",
+                  "type": "TEXT",
+                  "key": "PK"
+                },
+                {
+                  "id": "orders-buyer",
+                  "name": "buyer",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-sku",
+                  "name": "sku",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-quantity",
+                  "name": "quantity",
+                  "type": "INTEGER",
+                  "key": ""
+                }
+              ],
+              "nodeAttributes": [
+                {
+                  "key": "kind",
+                  "value": "table"
+                },
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "description",
+                  "value": "Committed order rows with generated string ID, buyer, SKU and strictly positive quantity. Inventory catalog and idempotency information are handled separately and do not create tables in this code."
+                },
+                {
+                  "key": "source",
+                  "value": "app/features/orders/providers/order_repository.py:init_database() CREATE TABLE"
+                },
+                {
+                  "key": "field:id",
+                  "value": "TEXT, PK, Unique UUID hex order identifier."
+                },
+                {
+                  "key": "field:buyer",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:sku",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:quantity",
+                  "value": "INTEGER, not null, CHECK(quantity > 0) enforced by SQLite."
+                }
+              ],
+              "config": {}
+            }
+          },
+          {
+            "id": "ent-legend",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 210
+            },
+            "width": 260,
+            "height": 120,
+            "data": {
+              "label": "This step's database:\ngrey = unchanged\nPK = primary key · FK = foreign key",
+              "shape": "note",
+              "color": "#d4b106",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "config": {}
+            }
+          }
+        ],
+        "edges": [],
+        "order": 10
+      }
+    },
+    {
+      "path": "diagram_canvas/erd-e-commerce-order-management-ai-agent-step-6",
+      "data": {
+        "name": "STEP-6-ERD",
+        "nodes": [
+          {
+            "id": "ent-orders",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 0
+            },
+            "width": 260,
+            "height": 150,
+            "data": {
+              "label": "orders",
+              "shape": "entity-table",
+              "color": "#8c8c8c",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "fields": [
+                {
+                  "id": "orders-id",
+                  "name": "id",
+                  "type": "TEXT",
+                  "key": "PK"
+                },
+                {
+                  "id": "orders-buyer",
+                  "name": "buyer",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-sku",
+                  "name": "sku",
+                  "type": "TEXT",
+                  "key": ""
+                },
+                {
+                  "id": "orders-quantity",
+                  "name": "quantity",
+                  "type": "INTEGER",
+                  "key": ""
+                }
+              ],
+              "nodeAttributes": [
+                {
+                  "key": "kind",
+                  "value": "table"
+                },
+                {
+                  "key": "step_change",
+                  "value": "unchanged"
+                },
+                {
+                  "key": "description",
+                  "value": "Committed order rows with generated string ID, buyer, SKU and strictly positive quantity. Inventory catalog and idempotency information are handled separately and do not create tables in this code."
+                },
+                {
+                  "key": "source",
+                  "value": "app/features/orders/providers/order_repository.py:init_database() CREATE TABLE"
+                },
+                {
+                  "key": "field:id",
+                  "value": "TEXT, PK, Unique UUID hex order identifier."
+                },
+                {
+                  "key": "field:buyer",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:sku",
+                  "value": "TEXT, not null"
+                },
+                {
+                  "key": "field:quantity",
+                  "value": "INTEGER, not null, CHECK(quantity > 0) enforced by SQLite."
+                }
+              ],
+              "config": {}
+            }
+          },
+          {
+            "id": "ent-legend",
+            "type": "diagramNode",
+            "position": {
+              "x": 0,
+              "y": 210
+            },
+            "width": 260,
+            "height": 120,
+            "data": {
+              "label": "This step's database:\ngrey = unchanged\nPK = primary key · FK = foreign key",
+              "shape": "note",
+              "color": "#d4b106",
+              "emoji": "",
+              "icon": "",
+              "body": "",
+              "config": {}
+            }
+          }
+        ],
+        "edges": [],
+        "order": 11
+      }
+    }
+  ]
+}
